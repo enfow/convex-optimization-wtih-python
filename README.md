@@ -21,3 +21,10 @@ Or just make setup
 ```
 make setup
 ```
+
+## Contents
+
+### Linear Programming
+
+- [diet.py](<https://github.com/enfow/convex-opt-python/blob/master/linear_programming/diet.py>): Minimize costs of all foods that meet nutritional requirements.
+- [farmer.py](<https://github.com/enfow/convex-opt-python/blob/master/linear_programming/farmer.py>): Maximize the farmer's profit in the limited resorces.
