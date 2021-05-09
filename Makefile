@@ -3,7 +3,7 @@ format:
 	isort .
 
 lint:
-	env PYTHONPATH=. pytest --flake8 --pylint --mypy
+	env PYTHONPATH=. pytest --flake8 --pylint
 
 setup:
 	pip install -U pip 
