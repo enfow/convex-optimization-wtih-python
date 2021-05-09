@@ -22,24 +22,24 @@ np.random.seed(1)
 
 
 # Define size of each variables
-I = 5  # 5 nutrients
-J = 10  # 10 foods
+NUM_NUTRIENTS = 5  # 5 nutrients
+NUM_FOODS = 10  # 10 foods
 
 # Generate random variables
-c = np.random.rand(J)
-d = np.random.rand(I)
-D = np.random.rand(I, J)
+c = np.random.rand(NUM_FOODS)
+d = np.random.rand(NUM_NUTRIENTS)
+D = np.random.rand(NUM_NUTRIENTS, NUM_FOODS)
 
 # Define optimization variable
-x = cvx.Variable(J)
+x = cvx.Variable(NUM_FOODS)
 
 # Define Problem
 problem = cvx.Problem(
-    cvx.Minimize(c@x),
+    cvx.Minimize(c @ x),
     [
-        D@x >= d,
+        D @ x >= d,
         x >= 0,
-    ]
+    ],
 )
 
 problem.solve()
@@ -47,3 +47,10 @@ problem.solve()
 print("Optimial Value: ", problem.value)
 print("Solution x: ")
 print(x.value)
+"""
+Optimial Value:  0.002006716889300396
+Solution x:
+    [5.65462476e-11 6.06350359e-11 1.75450878e+01 2.46768995e-10
+      1.61126275e-09 1.60536902e-09 3.35914284e-10 3.85801841e-11
+      1.15011075e-10 5.30695339e-11]
+"""
