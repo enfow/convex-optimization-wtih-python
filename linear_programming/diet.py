@@ -10,7 +10,9 @@
     - x_j: amount of food j in the diet.
 - Objective function:
     - minimize_x c.T @ x
-- Subject 
+- Constraints:
+    - Dx >= d
+    - x >= 0
 """
 
 import cvxpy as cvx
@@ -23,7 +25,7 @@ np.random.seed(1)
 I = 5  # 5 nutrients
 J = 10  # 10 foods
 
-# Generate Random LP Problem
+# Generate random variables
 c = np.random.rand(J)
 d = np.random.rand(I)
 D = np.random.rand(I, J)
