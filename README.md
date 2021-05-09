@@ -15,3 +15,9 @@ pip install -U pip
 pip install -U setuptools
 cat requirements.txt | xargs -n 1 pip install
 ```
+
+Or just make setup
+
+```
+make setup
+```
