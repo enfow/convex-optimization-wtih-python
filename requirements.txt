@@ -1,0 +1,6 @@
+numpy
+scipy
+osqp
+ecos
+scs
+cvxpy
