@@ -1,4 +1,4 @@
-# Convex Optimization with PYTHON
+# Convex Optimization Examples with CVXPY
 
 ## Installation
 
@@ -8,7 +8,7 @@
 pip install cvxpy
 ```
 
-But sometimes it does not works well. Then I recommends below commands.
+But sometimes it does not works well. Then it will be helpful.
 
 ```
 pip install -U pip 
@@ -16,7 +16,7 @@ pip install -U setuptools
 cat requirements.txt | xargs -n 1 pip install
 ```
 
-Or just make setup
+Or just make setup.
 
 ```
 make setup
