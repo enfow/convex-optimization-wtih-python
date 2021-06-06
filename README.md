@@ -26,5 +26,10 @@ make setup
 
 ### Linear Programming
 
-- [diet.py](<https://github.com/enfow/convex-opt-python/blob/master/linear_programming/diet.py>): Minimize costs of all foods that meet nutritional requirements.
-- [farmer.py](<https://github.com/enfow/convex-opt-python/blob/master/linear_programming/farmer.py>): Maximize the farmer's profit in the limited resorces.
+- [diet.py](<./linear_programming/diet.py>): Minimize costs of all foods that meet nutritional requirements.
+- [farmer.py](<./linear_programming/farmer.py>): Maximize the farmer's profit in the limited resorces.
+
+### Quadratic Programming
+
+- [general_form.py](<./quadratic_programming/general_form.py>): General form of QP problem
+- [svm.py](<./quadratic_programming/svm.py>): Support Vector Machine exmaple
