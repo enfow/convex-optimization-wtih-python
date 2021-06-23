@@ -33,3 +33,7 @@ make setup
 
 - [general_form.py](<./quadratic_programming/general_form.py>): General form of QP problem
 - [svm.py](<./quadratic_programming/svm.py>): Support Vector Machine exmaple
+
+### Newton's Method
+
+- [root_finding](<./newton_method/root_finding.py>): Find root of 2 with Newton's method.
