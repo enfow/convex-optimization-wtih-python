@@ -1,4 +1,4 @@
-# Convex Optimization Examples with CVXPY
+# Convex Optimization Examples with Python
 
 ## Installation
 
